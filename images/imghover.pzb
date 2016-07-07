@@ -1,0 +1,16 @@
+Version=1.1
+PathFormat=win
+[Items]
+[Items/Item0]
+Cmd=-i "F:\\作品\\项目\\images\\bg5.jpg" -w 346pixels -h 250pixels -m ssplinemax -s "-nousm -in 1 -ra 2.5 -sh 60 -fg 25 -ar 80 -cr 80 -vi 0"
+[Items/Item1]
+Cmd=-i "F:\\作品\\项目\\images\\bg6.jpg" -w 346pixels -h 250pixels -m ssplinemax -s "-nousm -in 1 -ra 2.5 -sh 60 -fg 25 -ar 80 -cr 80 -vi 0"
+[Items/Item2]
+Cmd=-i "F:\\作品\\项目\\images\\img3.jpeg" -w 346pixels -h 250pixels -m ssplinemax -s "-nousm -in 1 -ra 2.5 -sh 60 -fg 25 -ar 80 -cr 80 -vi 0"
+[Items/Item3]
+Cmd=-i "F:\\作品\\项目\\images\\img11.jpeg" -w 346pixels -h 250pixels -m ssplinemax -s "-nousm -in 1 -ra 2.5 -sh 60 -fg 25 -ar 80 -cr 80 -vi 0"
+[Settings]
+Output\ Folder=F:\\作品\\项目\\images\\
+Create\ Subfolders=1
+Output\ Format=jpg
+File\ Exists\ Action=Unique Name

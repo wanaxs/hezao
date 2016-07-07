@@ -1,0 +1,319 @@
+<!DOCTYPE html>
+<html>
+ <head> 
+  <meta charset="utf-8" /> 
+  <title>我的订单</title> 
+  <meta content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0" name="viewport" /> 
+  <meta name="author" content="" /> 
+  <!-- Le styles --> 
+ 
+  <link href="css/buttons.css" rel="stylesheet" /> 
+  <link href="css/flat.css" rel="stylesheet" /> 
+  <link href="css/font-awesome.css" rel="stylesheet" /> 
+  <link rel="stylesheet" href="css/style.css">
+  <link rel="stylesheet" href="css/orderimghover.css">
+   <link href="css/bootstrap.min.css" rel="stylesheet" /> 
+
+ 
+ 
+  <script>
+	document.addEventListener('WeixinJSBridgeReady', function onBridgeReady() {
+		WeixinJSBridge.call('hideToolbar');
+	});
+</script> 
+ </head> 
+ <body > 
+
+  <header>
+    <nav>
+      <div class="top_wrap">
+        <div class="logo_wrap">
+            <img src="./images/logo1.png" alt="">
+            
+        </div>
+          <ul class="menu_li">
+            <li class="active">
+              <a href="index.html">主页
+              <br>
+              <span>Home</span>
+              </a>
+            </li>
+            <li>
+              <a href="zuopin.html">作品展示
+              <br>
+              <span>Works</span>
+              </a>
+            </li>
+            <li>
+              <a href="shopping.html">制皂记
+              <br>
+              <span>Methods</span>
+              </a>
+            </li>
+            <li>
+              <a href="phone.html">联系我们
+              <br>
+              <span>Contact</span>
+              </a>
+            </li>
+          </ul>
+          <div id="show_list_btn" class="menu_catalog">
+            <i></i>
+          </div>
+      </div>
+    </nav>
+      <div id="top_img" class="carousel slide ">
+            <!-- 轮播点 -->
+            <ol class="carousel-indicators">
+                <li data-target="#myCarousel" data-slide-to="0"
+                    class="active"></li>
+                <li data-target="#myCarousel" data-slide-to="1"></li>
+                <li data-target="#myCarousel" data-slide-to="2"></li>
+            </ol>
+            <!-- 轮播图 -->
+            <div class="banner_con">
+                <div class="carousel-inner">
+                    <div class="item active">
+                        <div class="img_wrap">
+                            <p>不骄，不矜，勤工，好学，才是好女子。</p>
+                            <div class="img_border">
+                                <img src="images/pic2.png">
+                            </div>
+                            <div class="img_border">
+                                <img src="images/pic7.png">
+                            </div>
+                        </div>
+                    </div>
+                    <div class="item">
+                        <div class="img_wrap">
+                            <p>人静而后安，安而能后定，定而能后慧，慧而能后悟，悟而能后得。</p>
+                            <div class="img_border">
+                                <img src="images/pic3.png">
+                            </div>
+                            <div class="img_border">
+                                <img src="images/pic4.png">
+                            </div>
+                        </div>
+                    </div>
+                    <div class="item">
+                        <div class="img_wrap">
+                            <p>有时候，一点微不足道的肯定，对我却意义非凡。</p>
+                            <div class="img_border">
+                                <img src="images/pic5.png">
+                            </div>
+                            <div class="img_border">
+                                <img src="images/pic6.png">
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+
+  </header>
+  <div id="wrapper2" class="viewer wrapper countpage clearfix show" style="display:none"> 
+   <section class="order_title"> 
+    <div class="container" id=""> 
+     <div class="col-md-12 clearfix foot_orderList"> 
+      <div class="row"> 
+       <div class="col-xs-6"> 
+        <p class="notice"> </p> 
+       </div> 
+       <div class="col-xs-6"> 
+        <p class="notice tar"> 共计 <span class="price" id="price_txt">559元</span> </p> 
+       </div> 
+      </div> 
+     </div> 
+    </div> 
+   </section> 
+   <section class="oder_content"> 
+    <div class="container" id="J_order_list">
+     <div class="row" id="J_order_Manager"> 
+      <div class="col-xs-12 clearfix board_content"> 
+       <div class="col-xs-4 title_contain"> 
+        <p class="menu_title ">我的订单</p> 
+       </div> 
+       <div class="col-xs-2"> 
+       </div> 
+       
+       <div class="col-xs-3 title_contain"> 
+        
+       </div> 
+      </div> 
+     </div> 
+     <div class="row gray_line"> 
+      <div class="col-md-12 clearfix board_content"> <div class="col-xs-6"> <div class="col-md-6 clearfix order_item_name"> <label>薰衣草皂</label> </div><div class="col-md-6 clearfix order_price">123元一份</div> </div><div class="col-xs-6"><div class="btn_wrap counter"><i class="nocounter fl" style="display: inline-block;">1</i></div></div></div>
+     </div>
+	   <div class="row gray_line"> 
+      <div class="col-md-12 clearfix board_content"> <div class="col-xs-6"> <div class="col-md-6 clearfix order_item_name"> <label>进口韩国香皂</label> </div><div class="col-md-6 clearfix order_price">218元一份</div> </div><div class="col-xs-6"><div class="btn_wrap counter"><i class="nocounter fl" style="display: inline-block;">2</i></div></div></div>
+     </div>
+         <button class="btn" id="btn" onclick="javascript:alert('订单已提交请及时查看物流信息');">确认订单</button>
+    </div> 
+   </section>
+  </div>
+  <div class="main">
+      <div class="main-txt">
+        <h2 style="color:green">了解更多  皂福生活</<h2>
+      </div>
+      
+  </div> 
+  <div class="full-length">
+      
+    <ul>
+      <li>
+        <div class="port-6 effect-1">
+          <div class="image-box">
+            <img src="images/bg51.jpg" alt="Image-1">
+          </div>
+          <div class="text-desc">
+            <h3>AMYRIS</h3>
+            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+            <a href="#" class="btn">Learn more</a>
+          </div>
+        </div>
+      </li>
+      <li>
+        <div class="port-6 effect-2">
+          <div class="image-box">
+            <img src="images/bg61.jpg" alt="Image-2">
+          </div>
+          <div class="text-desc">
+            <h3>BEGRAMOT</h3>
+            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+            <a href="#" class="btn">Learn more</a>
+          </div>
+        </div>
+      </li>
+      <li>
+        <div class="port-6 effect-3">
+          <div class="image-box">
+            <img src="images/img31.jpeg" alt="Image-3">
+          </div>
+          <div class="text-desc">
+            <h3>BENZEOIN</h3>
+            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+            <a href="#" class="btn">Learn more</a>
+          </div>
+        </div>
+      </li>
+
+    </ul>
+    <ul>
+      <li>
+        <div class="port-7 effect-1">
+          <div class="image-box">
+            <img src="images/img9.jpeg" alt="Image-1">
+          </div>
+          <div class="text-desc">
+            <h3>BASIL</h3>
+            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+            <a href="#" class="btn">Learn more</a>
+          </div>
+        </div>
+      </li>
+      <li>
+        <div class="port-7 effect-2">
+          <div class="image-box">
+            <img src="images/img21.jpg" alt="Image-2">
+          </div>
+          <div class="text-desc">
+            <h3>ANISEED</h3>
+            <p>Lorem ipsum dolor sit amet, consectetur adipiscing.</p>
+            <a href="#" class="btn">Learn more</a>
+          </div>
+        </div>
+      </li>
+      <li>
+        <div class="port-7 effect-3">
+          <div class="image-box">
+            <img src="images/img6.jpeg" alt="Image-3">
+          </div>
+          <div class="text-desc">
+            <h3>AGELICA ROOT</h3>
+            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+            <a href="#" class="btn">Learn more</a>
+          </div>
+        </div>
+      </li>
+    </ul>
+  </div>
+    
+    <div style="clear:both;"></div>
+
+
+
+
+
+  <div class="footer" style="margin-top:0;">
+    <div class="container">
+      <div class="footer-grids">
+        <div class="col-md-3 footer-grid">
+          <div class="footer-grid-heading">
+            <h4>Address</h4>
+          </div>
+          <div class="footer-grid-info">
+            <p>wanaxs科技有限公司
+              <span>山东省烟台市莱山区</span>
+            </p>
+            <p class="phone">Phone : +188 655 29426
+              <span>Email : <a href="mailto:18865529426@163.com">18865529426@163.com</a></span>
+            </p>
+          </div>
+        </div>
+        <div class="col-md-3 footer-grid">
+          <div class="footer-grid-heading">
+            <h4>Navigation</h4>
+          </div>
+          <div class="footer-grid-info home">
+            <li>
+              <a href="Home.html">Home</a>
+            </li>
+              <li><a href="zuopin.html">Works</a></li>
+              <li><a href="shopping.html">Methods</a></li>
+              <li><a href="">Gallery</a></li>
+              <li><a href="Contact.html">Contact</a></li>
+              <li><a href="contact.html">Contact</a></li>
+            </ul>
+          </div>
+        </div>
+        
+        <div class="col-md-3 footer-grid">
+          <div class="footer-grid-heading">
+            <h4>About</h4>
+          </div>
+          <div class="footer-grid-info">
+            <p>制皂记
+              <span>DIY手工皂</span>
+            </p>
+            <p class="phone">Phone : +188 655 29426
+              <span>Email : <a href="mailto:18865529426@163.com">18865529426@163.com</a></span>
+            </p>
+          </div>
+        </div>
+        <div class="col-md-3 footer-grid" >
+          <div class="footer-grid-heading">
+            <h4>Newsletter</h4>
+          </div>
+          <div class="footer-grid-info">
+            <form action="#" method="post">
+              <input type="email" id="mc4wp_email" name="EMAIL" placeholder="Enter your email here" required="">
+              <input type="submit" value="Subscribe">
+            </form>
+          </div>
+        </div>
+        <div class="clearfix"> </div>
+      </div>
+      <div class="copyright">
+        <p>Copyright &copy; 2016.Company name All rights reserved.</p>
+      </div>
+    </div>
+  </div>
+
+  <script type="text/javascript" src="js/jquery-2.0.0.min.js"></script>
+  <script type="text/javascript" rel="script" src="js/bootstrap.min.js"></script>
+  <script type="text/javascript" rel="script" src="js/main.js"></script>
+
+   
+ </body>
+</html>
